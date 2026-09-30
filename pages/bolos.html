@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="../style.css">
+        <script src="../script.js" defer></script>
+
+        <link rel="shortcut icon" href="../img/ico/favicon.ico" type="image/x-icon">
+        <title>Mon Chocolat - Bolos</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md fixed-top" data-bs-theme="dark" aria-label="Menu principal">
+                <div class="container-fluid flex-md-column px-3 px-md-4">
+                    <a class="navbar-brand" href="inicio.html">
+                        <img class="logotipo" src="../img/logo/Logotipo.png" alt="Logotipo da Mon Chocolat">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir ou fechar menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+                        <ul class="navbar-Nav navbar-nav flex-column flex-md-row gap-2 gap-md-4 py-2 px-2">
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="inicio.html">Início</a></li>
+
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="cookies.html">Cookies</a></li>
+
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="brownie.html">Brownies</a></li>
+
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="donuts.html">Donuts</a></li>
+
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="bolos.html" aria-current="page">Bolos</a></li>
+
+                            <li class="navbar-item">
+                                <a class="navbar-link" href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="bolos">
+                <h1>Bolos</h1>
+
+                <section id="cardapio" class="container-fluid px-3 px-md-4 pb-5">
+
+                    <div class="cardapio-bolos row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-4 w-100">
+                        <template>
+                            <div class="col">
+                                <div class="cards-cardapio h-100 w-100 mb-0">
+                                    <div class="cardapio-img">
+                                        <img alt="">
+                                    </div>
+                                    <div class="cardapio-corpo">
+                                        <p class="titulo-produto"></p>
+                                        <p class="descricao-produto"></p>
+                                        <p class="preco-produto"></p>
+                                        <a class="botao-comprar" href="contato.html">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </template>
+                    </div>
+
+                </section>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div class="footer-conteudo d-flex flex-column flex-lg-row justify-content-evenly gap-4 gap-lg-5 px-3 py-5">
+                <div class="footer-logotipo">
+                    <img class="logotipo" src="../img/logo/Logotipo.png" alt="Logotipo da Mon Chocolat">
+                    <p>Feito com amor e muito chocolate.</p>
+                </div>
+
+                <div class="footer-links">
+                    <p>Cardápio</p>
+                    <ul>
+                        <li><a href="cookies.html">Cookies</a></li>
+                        <li><a href="brownie.html">Brownie</a></li>
+                        <li><a href="donuts.html">Donuts</a></li>
+                        <li><a href="bolos.html">Bolos</a></li>
+                    </ul>
+                </div>
+
+                <div class="redes-sociais">
+                    <p>Redes Sociais</p>
+                    <div class="redes-icones">
+                        <a href="contato.html#canais-titulo" class="whatsapp"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                        <a href="contato.html#canais-titulo" class="instagram"><i class="bi bi-instagram"></i> Instagram</a>
+                        <a href="contato.html#canais-titulo" class="facebook"><i class="bi bi-facebook"></i> Facebook</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-rodape">
+                <p>© 2026 Mon Chocolat. Todos os direitos reservados.</p>
+            </div>
+
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
