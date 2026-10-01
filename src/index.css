@@ -1,9 +1,33 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@charset "UTF-8";
+
+@font-face {
+    font-family: Michland;
+    src: url(fonts/Michland\ Script.otf) format(opentype);
 }
 
-body {
-  min-width: 320px;
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Damion;
+    src: url(fonts/Damion-Regular.ttf) format(truetype);
+}
+
+:root {
+    --cor-fundo: #f7eee8;
+    --marrom-escuro: #3e2925;
+    --rosa: #db8e9a;
+    --bege: #fff2e4;
+    --branco: #fffdfc;
+
+    --font-titulo: "Michland", cursive;
+    --font-titulo-diverso: "Damion", cursive;
+    --font-corpo: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }

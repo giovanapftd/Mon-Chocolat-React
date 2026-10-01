@@ -2,9 +2,12 @@ import './App.css'
 
 function App() {
   return (
-    <main>
-      <h1>Meu Projeto</h1>
-      <p>Landing Page em desenvolvimento.</p>
+    <main className="container py-5">
+      <h1>Mon Chocolat</h1>
+
+      <button className="btn btn-dark">
+        Teste Bootstrap
+      </button>
     </main>
   )
 }
