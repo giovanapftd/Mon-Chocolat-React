@@ -1,15 +1,8 @@
 import './App.css'
+import LandingPage from './pages/LandingPage.jsx'
 
 function App() {
-  return (
-    <main className="container py-5">
-      <h1>Mon Chocolat</h1>
-
-      <button className="btn btn-dark">
-        Teste Bootstrap
-      </button>
-    </main>
-  )
+  return <LandingPage />
 }
 
 export default App

@@ -1,33 +1,48 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: Michland;
-    src: url(fonts/Michland\ Script.otf) format(opentype);
+  font-family: Michland;
+  src: url('../fonts/Michland Script.otf') format('opentype');
+  font-display: swap;
 }
 
 @font-face {
-    font-family: Montserrat;
-    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
-    font-family: Damion;
-    src: url(fonts/Damion-Regular.ttf) format(truetype);
+  font-family: Damion;
+  src: url('../fonts/Damion-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 :root {
-    --cor-fundo: #f7eee8;
-    --marrom-escuro: #3e2925;
-    --rosa: #db8e9a;
-    --bege: #fff2e4;
-    --branco: #fffdfc;
-
-    --font-titulo: "Michland", cursive;
-    --font-titulo-diverso: "Damion", cursive;
-    --font-corpo: "Montserrat", sans-serif;
+  --cor-fundo: #f7eee8;
+  --marrom-escuro: #3e2925;
+  --rosa: #db8e9a;
+  --bege: #fff2e4;
+  --branco: #fffdfc;
+  --font-titulo: 'Michland', cursive;
+  --font-titulo-diverso: 'Damion', cursive;
+  --font-corpo: 'Montserrat', sans-serif;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--font-corpo);
+  background-color: var(--cor-fundo);
+  color: var(--marrom-escuro);
+}
+img { max-width: 100%; height: auto; }
+section { scroll-margin-top: 9rem; }
+a { text-decoration: none; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--rosa); outline-offset: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }

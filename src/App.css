@@ -1,3 +1,34 @@
-#root {
-  width: 100%;
+#root { width: 100%; }
+
+.mc-navbar {
+  background-color: var(--marrom-escuro);
+  border-bottom: 2px solid var(--rosa);
 }
+.logotipo { border: 3px solid var(--rosa); border-radius: 50%; object-fit: cover; }
+.mc-navbar .navbar-brand { margin-right: 0; }
+.mc-navbar .nav-link { color: var(--branco); }
+.mc-navbar .nav-link:hover, .mc-navbar .nav-link:focus { color: var(--rosa); }
+.mc-inicio { background-color: var(--bege); }
+.mc-inicio h1 { font-family: var(--font-titulo); font-size: clamp(3.5rem, 10vw, 6rem); }
+.mc-botao {
+  background-color: var(--rosa);
+  color: var(--marrom-escuro);
+  border: 2px solid var(--rosa);
+  border-radius: 30px;
+  padding: .6rem 1.5rem;
+  font-weight: 600;
+}
+.mc-botao:hover, .mc-botao:focus { background-color: var(--bege); border-color: var(--rosa); }
+.mc-secao { min-height: 240px; }
+.mc-secao:nth-child(even) { background-color: var(--branco); }
+.mc-secao h2 { font-family: var(--font-titulo-diverso); font-size: 2.5rem; }
+.mc-footer { background-color: var(--marrom-escuro); border-top: 3px solid var(--rosa); color: var(--branco); }
+.footer-logotipo p { color: var(--rosa); font-style: italic; }
+.footer-links h2, .redes-sociais h2 { font-family: var(--font-titulo); font-size: 3.5rem; color: var(--rosa); }
+.footer-links a { display: inline-block; color: var(--branco); margin-bottom: .8rem; }
+.footer-links a:hover { color: var(--rosa); }
+.redes-icones a { display: flex; align-items: center; justify-content: center; gap: .6rem; width: 11rem; padding: .5rem 1rem; border-radius: 30px; color: var(--branco); }
+.redes-icones .whatsapp { background-color: #25d366; color: #12351f; }
+.redes-icones .instagram { background: linear-gradient(45deg, #a63770, #b52b48, #833ab4); }
+.redes-icones .facebook { background-color: #1877f2; }
+.footer-rodape { border-top: 1px solid rgba(219, 142, 154, .3); font-size: .8rem; }
