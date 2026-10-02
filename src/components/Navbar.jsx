@@ -10,9 +10,15 @@ const links = [
 ]
 
 function Navbar() {
-  function fecharMenu() {
+  function fecharMenu(event) {
     const menu = document.getElementById('menuPrincipal')
     if (menu?.classList.contains('show')) {
+      event.preventDefault()
+      const destino = event.currentTarget.getAttribute('href')
+      menu.addEventListener('hidden.bs.collapse', () => {
+        window.location.hash = destino
+        document.querySelector(destino)?.scrollIntoView({ block: 'start' })
+      }, { once: true })
       document.getElementById('menuToggle').click()
     }
   }

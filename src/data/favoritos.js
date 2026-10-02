@@ -1,0 +1,38 @@
+export const favoritos = [
+  {
+    id: 'cookie-nutella',
+    titulo: 'Cookie de Nutella',
+    descricao: 'Crocante por fora, recheado com Nutella derretida por dentro.',
+    preco: 'R$ 15,00',
+    imagem: 'https://res.cloudinary.com/dn5ktthoj/image/upload/v1789260981/Cookie_de_Nutella_ybs8ji.png',
+    destino: '#cookies',
+    categoria: 'Cookies',
+  },
+  {
+    id: 'brownie-ninho-nutella',
+    titulo: 'Brownie de Ninho e Nutella',
+    descricao: 'Denso e cremoso, com camadas de Ninho e Nutella que derretem.',
+    preco: 'R$ 15,00',
+    imagem: 'https://res.cloudinary.com/dn5ktthoj/image/upload/v1789351756/Brownie_de_Ninho_com_Nutella_ldyci0.png',
+    destino: '#brownies',
+    categoria: 'Brownies',
+  },
+  {
+    id: 'donuts-morango',
+    titulo: 'Donuts de Morango',
+    descricao: 'Macio, leve e coberto com uma cobertura de morango.',
+    preco: 'R$ 15,00',
+    imagem: 'https://res.cloudinary.com/dn5ktthoj/image/upload/v1789351749/Donuts_de_Morango_gktf9e.png',
+    destino: '#donuts',
+    categoria: 'Donuts',
+  },
+  {
+    id: 'bolo-mirtilo',
+    titulo: 'Bolo de Mirtilo',
+    descricao: 'Aveludado, fofinho e com cobertura de chocolate branco.',
+    preco: 'R$ 25,00',
+    imagem: 'https://res.cloudinary.com/dn5ktthoj/image/upload/v1789351752/Bolo_de_Mirtilo_lyghzy.png',
+    destino: '#bolos',
+    categoria: 'Bolos',
+  },
+]

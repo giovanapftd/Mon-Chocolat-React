@@ -1,10 +1,12 @@
 import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
+import Hero from '../sections/Hero.jsx'
+import Sobre from '../sections/Sobre.jsx'
+import Cartaz from '../sections/Cartaz.jsx'
+import Favoritos from '../sections/Favoritos.jsx'
 
-// Apenas os destinos das âncoras. O conteúdo original será migrado nas próximas etapas.
+// As páginas de categorias e contato serão migradas na Etapa 6.
 const secoes = [
-  { id: 'sobre', titulo: 'Sobre Nossos Produtos' },
-  { id: 'favoritos', titulo: 'Os Favoritos da Mon Chocolat' },
   { id: 'cookies', titulo: 'Cookies' },
   { id: 'brownies', titulo: 'Brownies' },
   { id: 'donuts', titulo: 'Donuts' },
@@ -17,13 +19,10 @@ function LandingPage() {
     <>
       <Navbar />
       <main>
-        <section id="inicio" className="mc-inicio py-5" aria-labelledby="titulo-inicio">
-          <div className="container text-center">
-            <h1 id="titulo-inicio">Mon Chocolat</h1>
-            <p>Estrutura inicial da landing page.</p>
-            <a className="btn mc-botao" href="#cookies">Ver Cardápio</a>
-          </div>
-        </section>
+        <Hero />
+        <Sobre />
+        <Cartaz />
+        <Favoritos />
         {secoes.map((secao) => (
           <section id={secao.id} className="mc-secao py-5" aria-labelledby={`titulo-${secao.id}`} key={secao.id}>
             <div className="container text-center">
