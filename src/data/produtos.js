@@ -1,12 +1,4 @@
-const transicao = document.querySelectorAll('#texto-principal h1, #texto-principal p, .linha-fina');
-
-transicao.forEach((element, i) => {
-    setTimeout(() => element.classList.add('visivel'), i * 300);
-});
-
-
-
-const produtos = {
+export const produtos = {
     cookies: [
         { 
             titulo: "Cookie de Nutella", 
@@ -158,30 +150,4 @@ const produtos = {
         }]
 };
 
-function carregarCards(categoria) {
-    const container = document.querySelector(`.cardapio-${categoria}`);
-    if (!container) return;
 
-    const template = container.querySelector('template');
-    if (!template) return;
-
-    container.replaceChildren(template);
-
-    produtos[categoria].forEach(p => {
-        const card = template.content.cloneNode(true);
-        const imagem = card.querySelector('img');
-        
-        imagem.src = p.img;
-        imagem.alt = p.titulo;
-        card.querySelector('.titulo-produto').textContent = p.titulo;
-        card.querySelector('.descricao-produto').textContent = p.descricao;
-        card.querySelector('.preco-produto').textContent = p.preco;
-
-        container.appendChild(card);
-    });
-}
-
-carregarCards('cookies');
-carregarCards('brownies');
-carregarCards('donuts');
-carregarCards('bolos');

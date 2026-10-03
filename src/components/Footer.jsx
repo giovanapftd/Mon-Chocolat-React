@@ -3,7 +3,7 @@ import logo from '../../img/logo/Logotipo.png'
 function Footer() {
   return (
     <footer id="footer" className="mc-footer">
-      <div className="container d-flex flex-column flex-lg-row justify-content-evenly gap-4 gap-lg-5 px-3 py-5">
+      <div className="footer-conteudo d-flex flex-column flex-lg-row align-items-center justify-content-evenly gap-4 gap-lg-5 px-3 py-5">
         <div className="footer-logotipo text-center">
           <img className="logotipo" src={logo} alt="Logotipo da Mon Chocolat" width="112" height="112" />
           <p className="mt-3">Feito com amor e muito chocolate.</p>
