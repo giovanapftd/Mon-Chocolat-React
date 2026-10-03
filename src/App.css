@@ -692,3 +692,18 @@ img.icone{
 #contato { background: var(--bege); }
 #contato h2 { font-family: var(--font-titulo-diverso); font-size: 2.5rem; }
 #contato .contato-abertura h2 { font-size: clamp(2.5rem, 5vw, 4rem); }
+
+/* Espaço para o menu fechado e áreas de toque em telas pequenas. */
+.footer-rodape { padding-inline: 1rem; }
+@media (max-width: 767px) {
+  section, #favoritos, #canais-titulo { scroll-margin-top: 6rem; }
+  .mc-navbar .nav-link { min-height: 44px; display: flex; align-items: center; justify-content: center; }
+  .botao, .redes-icones a, .contato-cardapio { min-height: 44px; }
+  .footer-links a { min-height: 44px; display: flex; align-items: center; justify-content: center; }
+}
+@media (hover: none) {
+  .cards-cardapio:hover, .botao:hover { transform: none; }
+}
+@media (max-width: 575px) {
+  .mc-hero-texto h1 { font-size: clamp(2.75rem, 10vw, 3.5rem); }
+}
