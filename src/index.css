@@ -43,6 +43,25 @@ section { scroll-margin-top: 9rem; }
 a { text-decoration: none; }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--rosa); outline-offset: 4px; }
 
+/* O atalho aparece somente quando recebe foco pelo teclado. */
+.pular-conteudo {
+  position: fixed;
+  top: .5rem;
+  left: .5rem;
+  z-index: 1100;
+  padding: .75rem 1rem;
+  background: var(--marrom-escuro);
+  color: var(--branco);
+  border: 2px solid var(--rosa);
+  border-radius: .5rem;
+  transform: translateY(-150%);
+}
+.pular-conteudo:focus { transform: translateY(0); color: var(--branco); }
+#conteudo-principal { scroll-margin-top: 9rem; }
+@media (max-width: 767px) {
+  #conteudo-principal { scroll-margin-top: 6rem; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }

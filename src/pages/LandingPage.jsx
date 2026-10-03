@@ -13,8 +13,9 @@ import Contato from '../sections/Contato.jsx'
 function LandingPage() {
   return (
     <>
+      <a className="pular-conteudo" href="#conteudo-principal">Pular para o conteúdo</a>
       <Navbar />
-      <main>
+      <main id="conteudo-principal" tabIndex={-1}>
         <Hero />
         <Sobre />
         <Cartaz />

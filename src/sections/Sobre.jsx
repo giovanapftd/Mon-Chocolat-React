@@ -20,7 +20,7 @@ function Sobre() {
         <div id="cards-icones" className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
           {categorias.map((categoria) => (
             <div className="col" key={categoria.nome}>
-              <div className="cards-icones" tabIndex="0" aria-label={`${categoria.nome}: ${categoria.descricao}`}>
+              <div className="cards-icones" role="group" tabIndex="0" aria-label={`${categoria.nome}: ${categoria.descricao}`}>
                 <div className="card-frente" aria-hidden="true">
                   <img src={categoria.imagem} alt={`Ícone de ${categoria.nome}`} className="icone" loading="lazy" />
                 </div>

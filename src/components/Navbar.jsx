@@ -17,15 +17,30 @@ function Navbar() {
       const destino = event.currentTarget.getAttribute('href')
       menu.addEventListener('hidden.bs.collapse', () => {
         window.location.hash = destino
-        document.querySelector(destino)?.scrollIntoView({ block: 'start' })
+        const secao = document.querySelector(destino)
+        if (secao) {
+          secao.scrollIntoView({ block: 'start' })
+          secao.setAttribute('tabindex', '-1')
+          secao.focus({ preventScroll: true })
+        }
       }, { once: true })
       document.getElementById('menuToggle').click()
     }
   }
 
+  function fecharComEscape(event) {
+    const menu = document.getElementById('menuPrincipal')
+    if (event.key === 'Escape' && menu?.classList.contains('show')) {
+      event.preventDefault()
+      const botao = document.getElementById('menuToggle')
+      botao.click()
+      botao.focus()
+    }
+  }
+
   return (
     <header className="sticky-top">
-      <nav className="navbar navbar-expand-md mc-navbar" data-bs-theme="dark" aria-label="Menu principal">
+      <nav className="navbar navbar-expand-md mc-navbar" data-bs-theme="dark" aria-label="Menu principal" onKeyDown={fecharComEscape}>
         <div className="container-fluid flex-md-column px-3 px-md-4">
           <a className="navbar-brand" href="#inicio" onClick={fecharMenu}>
             <img className="logotipo" src={logo} alt="Mon Chocolat — início" width="56" height="56" />
