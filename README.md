@@ -1,16 +1,47 @@
-# React + Vite
+# Mon Chocolat | Landing Page em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Parte 2 (individual) do trabalho da disciplina Desenvolvimento FrontEnd II.
 
-Currently, two official plugins are available:
+## Autor
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Giovana Pedro Furtado
 
-## React Compiler
+## Origem
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Repositório da Parte 1: https://github.com/giovanapftd/Mon-Chocolat.git
+- Páginas que fiz na Parte 1: todo o site — `inicio.html`, `cookies.html`, `brownie.html`, `donuts.html`, `bolos.html` e `contato.html`.
+- Autora da página inicial original (`inicio.html`): Giovana Pedro Furtado.
 
-## Expanding the ESLint configuration
+O site original foi convertido em uma única landing page com React e Vite, mantendo o Bootstrap e a identidade visual da Mon Chocolat.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Site publicado
+
+https://monchocolat-react.netlify.app/
+
+## Como executar
+
+Com Node.js e npm instalados, abra o terminal na pasta do projeto e execute:
+
+```bash
+npm install
+npm run dev
+```
+
+Acesse o endereço informado no terminal.
+
+## Seções da Landing Page
+
+| Seção | Origem |
+| --- | --- |
+| Hero (banner principal) | `inicio.html` |
+| Sobre nossos produtos | `inicio.html` |
+| Cartaz | `inicio.html` |
+| Favoritos da Mon Chocolat | `inicio.html` |
+| Cardápio de cookies | `cookies.html` (minha página) |
+| Cardápio de brownies | `brownie.html` (minha página) |
+| Cardápio de donuts | `donuts.html` (minha página) |
+| Cardápio de bolos | `bolos.html` (minha página) |
+| Contato e canais | `contato.html` |
+| Chamada para encomendas | `contato.html` (aviso de pedido) |
+
+Todas as páginas de origem foram desenvolvidas por Giovana Pedro Furtado. O menu e o rodapé compartilhados foram reunidos em componentes únicos, com navegação por âncoras entre as seções.
