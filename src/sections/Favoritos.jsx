@@ -6,6 +6,7 @@ function Favoritos() {
       <h2 id="titulo-favoritos" className="display-4">Os Favoritos da <span className="marcado-rosa">Mon Chocolat</span></h2>
       <p className="favoritos-subtitulo">Os queridinhos de quem ama um bom doce!</p>
       <div className="favoritos row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 mx-auto px-3 px-md-4">
+        {/* Os destaques vêm da lista em data/favoritos.js. */}
         {favoritos.map((produto) => (
           <div className="col" key={produto.id}>
             <article className="cards-cardapio h-100">

@@ -1,3 +1,4 @@
+// Os campos do produto preenchem o JSX do cartão.
 function CardProduto({ produto }) {
   return (
     <article className="cards-cardapio h-100 w-100 mb-0">

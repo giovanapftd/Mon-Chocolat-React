@@ -1,3 +1,4 @@
+// Dados do cardápio original, agrupados por categoria.
 export const produtos = {
     cookies: [
         { 

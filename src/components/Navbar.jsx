@@ -1,5 +1,6 @@
 import logo from '../../img/logo/Logotipo.png'
 
+// Os ids correspondem às âncoras das seções.
 const links = [
   { id: 'inicio', texto: 'Início' },
   { id: 'cookies', texto: 'Cookies' },
@@ -10,6 +11,7 @@ const links = [
 ]
 
 function Navbar() {
+  // No celular, fecha o menu antes de posicionar a seção escolhida.
   function fecharMenu(event) {
     const menu = document.getElementById('menuPrincipal')
     if (menu?.classList.contains('show')) {
